@@ -1,96 +1,103 @@
 # LTH17Group1.github.io
-# Giới thiệu về Hệ thống phân tán
+# 📅 28/04/2025
 
-## Hệ thống phân tán là gì?
+# 📖 Blog: Hệ thống phân tán - Lương Trung Hiếu
 
-Hệ thống phân tán (Distributed System) là tập hợp các máy tính độc lập, phối hợp với nhau để đạt được một mục tiêu chung. Các máy tính giao tiếp qua mạng và hoạt động như một hệ thống thống nhất đối với người dùng.
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Distributed_systems.svg/800px-Distributed_systems.svg.png" alt="Distributed System Illustration" width="600"/>
 
-## Các ứng dụng của hệ thống phân tán
+## 1. Hệ thống phân tán là gì?
 
-- **Mạng xã hội và truyền thông**: Ví dụ như Facebook, Twitter.
-- **Thương mại điện tử**: Ví dụ như Amazon, Shopee.
-- **Ngân hàng và tài chính**: Hệ thống giao dịch trực tuyến.
-- **Trò chơi trực tuyến**: Ví dụ như PUBG, Liên Quân.
+Hệ thống phân tán (Distributed System) là tập hợp các máy tính độc lập, phối hợp với nhau để đạt được một mục tiêu chung. Các máy tính này giao tiếp với nhau thông qua mạng và hoạt động như một hệ thống duy nhất đối với người dùng cuối.
 
-## Các khái niệm chính của hệ thống phân tán
+## 2. Các ứng dụng của hệ thống phân tán
 
-### Scalability (Khả năng mở rộng)
-Khả năng hệ thống xử lý khối lượng công việc tăng lên bằng cách thêm tài nguyên.
+- **Mạng xã hội và truyền thông**: Facebook, Twitter.
+- **Thương mại điện tử**: Amazon, Shopee.
+- **Ngân hàng và tài chính**: Hệ thống giao dịch trực tuyến 24/7.
+- **Trò chơi trực tuyến**: PUBG, Liên Quân Mobile.
 
-### Fault Tolerance (Khả năng chịu lỗi)
-Hệ thống tiếp tục hoạt động ngay cả khi một số thành phần gặp lỗi.
+## 3. Các khái niệm chính của hệ thống phân tán
 
-### Availability (Tính sẵn sàng)
-Hệ thống luôn sẵn sàng phục vụ người dùng.
+### 🔹 Scalability (Khả năng mở rộng)
+Hệ thống có thể mở rộng để xử lý khối lượng công việc lớn hơn bằng cách thêm tài nguyên.
 
-### Transparency (Tính trong suốt)
-Người dùng không cần biết hệ thống được tổ chức như thế nào ở bên trong.
+### 🔹 Fault Tolerance (Khả năng chịu lỗi)
+Hệ thống vẫn tiếp tục hoạt động ngay cả khi một số thành phần gặp sự cố.
 
-### Concurrency (Tính đồng thời)
-Nhiều tác vụ có thể được thực hiện đồng thời.
+### 🔹 Availability (Tính sẵn sàng)
+Đảm bảo hệ thống luôn sẵn sàng phục vụ người dùng.
 
-### Parallelism (Tính song song)
-Thực hiện nhiều công việc cùng lúc để cải thiện tốc độ xử lý.
+### 🔹 Transparency (Tính trong suốt)
+Người dùng không cần biết về cấu trúc hay địa chỉ thực tế của dịch vụ.
 
-### Openness (Tính mở)
-Hệ thống sử dụng các tiêu chuẩn mở, cho phép tích hợp dễ dàng.
+### 🔹 Concurrency (Tính đồng thời)
+Nhiều tác vụ được xử lý cùng lúc mà không xung đột.
 
-### Vertical Scaling (Mở rộng theo chiều dọc)
-Nâng cấp phần cứng cho một máy chủ đơn lẻ (thêm RAM, CPU).
+### 🔹 Parallelism (Tính song song)
+Các tác vụ được phân chia và xử lý đồng thời trên nhiều bộ xử lý.
 
-### Horizontal Scaling (Mở rộng theo chiều ngang)
-Thêm nhiều máy chủ mới để chia sẻ tải.
+### 🔹 Openness (Tính mở)
+Hệ thống được xây dựng dựa trên các chuẩn mở, dễ dàng tích hợp thêm thành phần.
 
-### Load Balancer (Cân bằng tải)
-Phân phối lưu lượng hoặc yêu cầu giữa các máy chủ để tối ưu hiệu suất.
+### 🔹 Vertical Scaling (Mở rộng chiều dọc)
+Nâng cấp phần cứng cho một máy chủ đơn lẻ (RAM, CPU).
 
-### Replication (Sao chép)
-Tạo nhiều bản sao dữ liệu để tăng tính sẵn sàng và khả năng phục hồi.
+### 🔹 Horizontal Scaling (Mở rộng chiều ngang)
+Thêm nhiều máy chủ mới để chia sẻ tải và tăng khả năng xử lý.
 
-## Ví dụ: Hệ thống thương mại điện tử
+### 🔹 Load Balancer (Cân bằng tải)
+Phân phối đều lưu lượng đến các máy chủ để tránh quá tải.
 
-Giả sử một nền tảng thương mại điện tử lớn như Amazon:
+### 🔹 Replication (Sao chép dữ liệu)
+Tạo ra các bản sao dữ liệu nhằm tăng độ tin cậy và khả năng phục hồi.
 
-- **Scalability**: Tăng số lượng máy chủ khi có nhiều đơn hàng.
-- **Fault Tolerance**: Khi một server chết, các server khác tự động tiếp nhận.
-- **Availability**: Dịch vụ luôn trực tuyến, hạn chế tối đa downtime.
-- **Transparency**: Người dùng không thấy được máy chủ nào xử lý yêu cầu.
-- **Concurrency & Parallelism**: Xử lý đồng thời nhiều giao dịch, tìm kiếm sản phẩm.
-- **Openness**: Tích hợp với các cổng thanh toán, vận chuyển bên thứ ba.
-- **Vertical & Horizontal Scaling**: Mở rộng máy chủ theo cả 2 chiều.
-- **Load Balancer**: Cân bằng lưu lượng truy cập đến nhiều server.
-- **Replication**: Dữ liệu đơn hàng và sản phẩm được sao lưu trên nhiều trung tâm dữ liệu.
+## 4. Ví dụ: Hệ thống thương mại điện tử
 
-## Kiến trúc của hệ thống phân tán
+**Ví dụ Amazon**:
 
-### Kiến trúc Client-Server
-- Máy khách gửi yêu cầu, máy chủ xử lý.
-- Ví dụ: Trình duyệt web và server web.
+- **Scalability**: Thêm máy chủ vào hệ thống khi lượng truy cập tăng.
+- **Fault Tolerance**: Một node gặp lỗi, node khác tiếp quản ngay lập tức.
+- **Availability**: Website luôn online, không downtime.
+- **Transparency**: Người dùng không thấy được máy chủ thực sự nào đang xử lý yêu cầu.
+- **Concurrency & Parallelism**: Xử lý hàng triệu đơn hàng và tìm kiếm sản phẩm cùng lúc.
+- **Openness**: Kết nối với các dịch vụ vận chuyển, thanh toán bên ngoài.
+- **Vertical & Horizontal Scaling**: Tăng cấu hình server hoặc mở rộng thêm server.
+- **Load Balancer**: Điều phối yêu cầu tới các server nhàn rỗi nhất.
+- **Replication**: Dữ liệu khách hàng và đơn hàng được nhân bản nhiều nơi.
 
-### Kiến trúc Peer-to-Peer (P2P)
-- Mỗi node vừa là client vừa là server.
-- Ví dụ: BitTorrent.
+## 5. Kiến trúc của hệ thống phân tán
 
-### Kiến trúc Microservices
-- Ứng dụng chia thành các dịch vụ nhỏ, độc lập.
+### 🌟 Kiến trúc Client-Server
+- Máy khách (client) gửi yêu cầu, máy chủ (server) phản hồi.
+- Ví dụ: Trình duyệt web - Server web.
+
+### 🌟 Kiến trúc Peer-to-Peer (P2P)
+- Các node vừa làm client vừa làm server.
+- Ví dụ: Mạng chia sẻ tệp BitTorrent.
+
+### 🌟 Kiến trúc Microservices
+- Ứng dụng chia nhỏ thành các dịch vụ độc lập.
 - Ví dụ: Netflix.
 
-### Kiến trúc Service-Oriented Architecture (SOA)
-- Dịch vụ giao tiếp với nhau qua các chuẩn như SOAP.
+### 🌟 Kiến trúc Service-Oriented Architecture (SOA)
+- Các dịch vụ giao tiếp qua chuẩn như SOAP, WSDL.
 
-### Kiến trúc Event-Driven
-- Các thành phần giao tiếp thông qua sự kiện, phù hợp hệ thống thời gian thực.
+### 🌟 Kiến trúc Event-Driven
+- Các thành phần giao tiếp qua các sự kiện bất đồng bộ.
+- Phù hợp với hệ thống thời gian thực như Uber.
 
-## Ví dụ: Hệ thống Hadoop
+## 6. Ví dụ thực tế: Hệ thống Hadoop
 
-Hadoop cho phép xử lý dữ liệu lớn bằng cách:
+**Hadoop** là một nền tảng xử lý dữ liệu lớn theo kiến trúc phân tán:
 
-- **Scalability**: Thêm node vào cluster để mở rộng xử lý.
-- **Fault Tolerance**: Dữ liệu được sao lưu nhiều bản trên các node khác nhau.
-- **Parallelism**: Các node xử lý dữ liệu song song.
-- **Transparency**: Người dùng không cần biết dữ liệu được xử lý ở đâu.
+- **Scalability**: Dễ dàng mở rộng cluster bằng cách thêm node.
+- **Fault Tolerance**: Nếu một node thất bại, dữ liệu đã có bản sao trên các node khác.
+- **Parallelism**: Phân chia công việc thành nhiều phần để xử lý đồng thời.
+- **Transparency**: Người dùng chỉ tương tác với một lớp trừu tượng.
 
 ---
 
-> **Nguồn tham khảo**: Slide bài giảng Hệ thống phân tán, Google, tài liệu kiến trúc hệ thống thực tế như Netflix, Amazon
+> **Viết bởi**: Lương Trung Hiếu  
+> **Ngày**: 28/04/2025  
+> **Nguồn tham khảo**: Slide bài giảng Hệ thống phân tán, Google, Wikipedia.
 
